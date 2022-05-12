@@ -4,8 +4,8 @@
 // Methods to find the student with the least and highest total
 
 let details = {
-  data : [],
-  addStudent : function(nam,math,hin,phy){
+  data: [],
+  addStudent: function (nam, math, hin, phy) {
     let obj = {};
     obj.name = nam;
     obj.maths = math;
@@ -13,32 +13,36 @@ let details = {
     obj.physics = phy;
     this.data.push(obj);
   },
-  low_marks : function(){
+  low_marks: function () {
     let notebook = Infinity;
     let lowStudent;
-    for(let i=0;i<this.data.length;i++){
-      let total=this.data[i].maths+this.data[i].hindi+this.data[i].physics;
-      if(total<notebook){
+    for (let i = 0; i < this.data.length; i++) {
+      let total =
+        this.data[i].maths + this.data[i].hindi + this.data[i].physics;
+      if (total < notebook) {
         notebook = total;
         lowStudent = this.data[i];
       }
     }
-    console.log(lowStudent.name, "has the Minimum marks")
+    console.log(lowStudent.name, "has the Minimum marks");
   },
-  max_marks : function(){
+  max_marks: function () {
     let notebook = -Infinity;
     let highStudent;
-    for(let i=0;i<this.data.length;i++){
-      let total=this.data[i].maths+this.data[i].hindi+this.data[i].physics;
-      if(total>notebook){
+    for (let i = 0; i < this.data.length; i++) {
+      let total =
+        this.data[i].maths + this.data[i].hindi + this.data[i].physics;
+      if (total > notebook) {
         notebook = total;
         highStudent = this.data[i];
       }
     }
-    console.log(highStudent.name, "has the Maximum marks")
-  }
+    console.log(highStudent.name, "has the Maximum marks");
+  },
 };
 
-details.addStudent("Kirti",65,45,75);
-details.addStudent("Riya",57,76,87);
-details.addStudent("Mitali",78,44,76);
+details.addStudent("Kirti", 65, 45, 75);
+details.addStudent("Riya", 57, 76, 87);
+details.addStudent("Mitali", 78, 44, 76);
+
+// * * *
