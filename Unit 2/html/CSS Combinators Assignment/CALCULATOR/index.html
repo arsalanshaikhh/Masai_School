@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        color: #008080;
+      }
+      #cal {
+        /* border: 1px solid red; */
+        width: 400px;
+        height: auto;
+        margin: auto;
+        padding: 5%;
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #dis {
+        width: 90%;
+        height: 90px;
+        margin: auto;
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .line {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .line > button {
+        width: 23%;
+        height: 90px;
+        border-radius: 7px;
+        font-size: 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 0px;
+      }
+      .line > button:last-child {
+        background-color: black;
+        color: aliceblue;
+      }
+      .last > button:first-child {
+        background-color: #fe0000;
+        color: aliceblue;
+      }
+      .last > button:nth-child(3) {
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Masai Calculater</h1>
+    <div id="cal">
+      <div id="dis"></div>
+      <div id="container">
+        <div class="line">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>+</button>
+        </div>
+
+        <div class="line">
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>-</button>
+        </div>
+
+        <div class="line">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>x</button>
+        </div>
+
+        <div class="line last">
+          <button>c</button>
+          <button>0</button>
+          <button>=</button>
+          <button>/</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

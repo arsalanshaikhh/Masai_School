@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #heading > h1 {
+        width: 400px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      #heading > p {
+        width: 450px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      #cards-section {
+        width: 80%;
+        display: flex;
+        margin: auto;
+      }
+      #card {
+        text-align: center;
+        width: 25%;
+        /* border: 1px solid red; */
+        margin: auto;
+        padding: 5px 30px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      button {
+        padding: 10px 30px;
+        color: blue;
+        border: 1px solid blue;
+        border-radius: 7px;
+      }
+      #card > h1 {
+        color: green;
+      }
+
+      #card > p {
+        font-size: 22px;
+        line-height: 30px;
+      }
+      #card > #h2 {
+        color: rgb(150, 150, 8);
+      }
+      #card > #h3 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Choose a plan that right for your business</h1>
+      <p>
+        We collect reviews from our users so you can get an honest opinion of
+        what an experience with our website are really like!
+      </p>
+    </div>
+
+    <!-- Cards section -->
+    <div id="cards-section">
+      <div id="card">
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per Month</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Voluptatibus, molestiae. Necessitatibus, quisquam ex voluptate
+        </p>
+        <button>Start Now</button>
+      </div>
+
+      <div id="card">
+        <h2>Starter Plan</h2>
+        <h1 id="h2">$39.00</h1>
+        <p>Per Month</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Voluptatibus, molestiae. Necessitatibus, quisquam ex voluptate
+        </p>
+        <button>Start Now</button>
+      </div>
+
+      <div id="card">
+        <h2>Starter Plan</h2>
+        <h1 id="h3">$59.00</h1>
+        <p>Per Month</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Voluptatibus, molestiae. Necessitatibus, quisquam ex voluptate
+        </p>
+        <button>Start Now</button>
+      </div>
+      <!-- This section should contain 3 children divs, each div should have h2,h1,p,p,button -->
+    </div>
+  </body>
+</html>
