@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: inherit;
+      }
+      nav {
+        margin: auto;
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+      }
+      #logo {
+        width: 25%;
+        display: flex;
+        justify-content: flex-start;
+      }
+      .con2 {
+        display: flex;
+        width: 80%;
+        justify-content: flex-end;
+      }
+      .con2 > p {
+        margin: auto;
+        font-size: 11px;
+        border-radius: 5px;
+        font-weight: 400;
+
+        padding: 10px;
+      }
+      .con2 > p:hover {
+        color: #ed0331;
+      }
+      .con2 > p:nth-child(6) {
+        color: #6e84d6;
+      }
+      .con2 > p:nth-child(6):hover {
+        background-color: #b7e6cf;
+      }
+      button {
+        color: #ed0331;
+        border: 1px solid #ed0331;
+        border-radius: 5px;
+        font-size: 11px;
+        font-weight: 400;
+        padding: 10px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+      </div>
+
+      <div class="con2">
+        <p>COURSES</p>
+        <p>FEE & ISA</p>
+        <p>ABOUT US</p>
+        <p>HIRE FROM US</p>
+        <p>FAQEVENT</p>
+        <p>REFER & EARN</p>
+        <button>LOGIN</button>
+      </div>
+    </nav>
+  </body>
+</html>
