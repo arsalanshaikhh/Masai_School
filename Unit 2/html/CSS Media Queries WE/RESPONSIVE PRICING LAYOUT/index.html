@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        width: 30%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      body > p {
+        width: 40%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      .con {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        margin: auto;
+        text-align: center;
+      }
+      .con > .card {
+        /* border: 1px solid red; */
+        padding: 20px;
+      }
+      /* .con > .card > p:first-child {
+      } */
+
+      button {
+        padding: 3% 10%;
+        border-radius: 8px;
+        border: 1px solid blue;
+        background-color: white;
+        color: blue;
+      }
+      #sec {
+        padding: 3% 10%;
+        border-radius: 8px;
+        background-color: blue;
+        color: white;
+      }
+
+      @media all and (min-width: 480px) and (max-width: 720px) {
+        h1 {
+          width: 60%;
+        }
+        body > p {
+          width: 80%;
+        }
+
+        .con {
+          width: 70%;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto auto;
+        }
+      }
+
+      @media all and (min-width: 320px) and (max-width: 479px) {
+        h1 {
+          width: 80%;
+        }
+        body > p {
+          width: 90%;
+        }
+        .con {
+          width: 70%;
+          grid-template-columns: repeat(1, 1fr);
+          /* grid-template-rows: auto; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Choose a plan that rigth for your business</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quos
+      magnam doloribus eum harum tenetur, cum nesciunt officia volupta
+    </p>
+    <div class="con">
+      <div class="card">
+        <h3>Starter Plan</h3>
+        <h2>FREE</h2>
+        <p>Per Month</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+          exercitationem officia obcaecati
+        </p>
+        <button>Strat Now</button>
+      </div>
+
+      <div class="card">
+        <h3>Starter Plan</h3>
+        <h2>FREE</h2>
+        <p>Per Month</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+          exercitationem officia obcaecati
+        </p>
+        <button id="sec">Strat Now</button>
+      </div>
+
+      <div class="card">
+        <h3>Starter Plan</h3>
+        <h2>FREE</h2>
+        <p>Per Month</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+          exercitationem officia obcaecati
+        </p>
+        <button>Strat Now</button>
+      </div>
+    </div>
+  </body>
+</html>
