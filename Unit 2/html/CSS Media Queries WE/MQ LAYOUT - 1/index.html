@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-size: 30px;
+      }
+      nav {
+        width: 100%;
+        background-color: yellow;
+        height: 50px;
+      }
+      #container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px;
+        gap: 20px;
+      }
+      .card:nth-child(1) {
+        background-color: red;
+      }
+      .card:nth-child(2) {
+        background-color: green;
+      }
+      .card:nth-child(3) {
+        background-color: blue;
+      }
+      .card:nth-child(4) {
+        background-color: gray;
+      }
+
+      @media all and (min-width: 480px) and (max-width: 720px) {
+        #container {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 300px 300px;
+        }
+
+        .card:nth-child(2) {
+          order: 3;
+        }
+        .card:nth-child(3) {
+          order: 2;
+        }
+        .card:nth-child(4) {
+          order: 4;
+        }
+      }
+
+      @media all and (min-width: 320px) and (max-width: 479px) {
+        #container {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(4, 150px);
+        }
+
+        .card:nth-child(2) {
+          order: 3;
+        }
+        .card:nth-child(3) {
+          order: 4;
+        }
+        .card:nth-child(4) {
+          order: 2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Navigation</nav>
+    <div id="container">
+      <div class="card">Box 1</div>
+      <div class="card">Box 2</div>
+      <div class="card">Box 3</div>
+      <div class="card">Box 4</div>
+    </div>
+  </body>
+</html>
